@@ -21,18 +21,18 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.example.myapplication.ui.theme.MyApplicationTheme
+                import androidx.compose.ui.res.painterResource
+                import androidx.compose.ui.text.font.FontWeight
+                import androidx.compose.ui.tooling.preview.Preview
+                import androidx.compose.ui.unit.dp
+                import androidx.compose.ui.unit.sp
+                import com.example.myapplication.ui.theme.MyApplicationTheme
 
-class MainActivity : ComponentActivity() {
+        class MainActivity : ComponentActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+            override fun onCreate(savedInstanceState: Bundle?) {
+                super.onCreate(savedInstanceState)
+                enableEdgeToEdge()
 
         setContent {
             MyApplicationTheme {
@@ -61,7 +61,6 @@ fun ProfileScreen(
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        // Profile Photo
         Image(
             painter = painterResource(id = R.drawable.profile_photo),
             contentDescription = "Profile Photo",
@@ -78,7 +77,6 @@ fun ProfileScreen(
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        // Name
         Text(
             text = "Christian Jay Nagac",
             style = MaterialTheme.typography.headlineSmall,
@@ -86,7 +84,7 @@ fun ProfileScreen(
             color = MaterialTheme.colorScheme.primary
         )
 
-        // Course + Section
+
         Text(
             text = "BSIT • 3A",
             style = MaterialTheme.typography.titleMedium
@@ -94,7 +92,7 @@ fun ProfileScreen(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Information Card
+
         Card(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(16.dp),
