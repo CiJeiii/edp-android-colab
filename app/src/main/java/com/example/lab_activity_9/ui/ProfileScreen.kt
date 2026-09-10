@@ -67,8 +67,7 @@ fun ProfileScreen(postsVm: PostsViewModel, themeVm: ThemeViewModel) {
             )
             
             Spacer(Modifier.height(16.dp))
-            
-            // Post Count - below Email
+
             Text(
                 text = "${posts.size} posts",
                 style = MaterialTheme.typography.titleLarge,
@@ -76,11 +75,9 @@ fun ProfileScreen(postsVm: PostsViewModel, themeVm: ThemeViewModel) {
             )
             
             Spacer(Modifier.height(20.dp))
-            
-            // Horizontal Divider - below post count
+
             HorizontalDivider(thickness = 1.dp)
-            
-            // Dark theme switch row
+
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -88,13 +85,11 @@ fun ProfileScreen(postsVm: PostsViewModel, themeVm: ThemeViewModel) {
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.Start
             ) {
-                // Switch on the Left
                 Switch(
                     checked = darkTheme,
                     onCheckedChange = { themeVm.onThemeChanged(it) }
                 )
                 Spacer(Modifier.width(12.dp))
-                // Text on the Right
                 Text(
                     text = "Dark theme",
                     style = MaterialTheme.typography.bodyLarge,
@@ -103,7 +98,6 @@ fun ProfileScreen(postsVm: PostsViewModel, themeVm: ThemeViewModel) {
             }
         }
 
-        // Page Number - Bottom Right, slightly smaller
         Text(
             text = "Christian Jay Nagac Page 11 of 16",
             modifier = Modifier
