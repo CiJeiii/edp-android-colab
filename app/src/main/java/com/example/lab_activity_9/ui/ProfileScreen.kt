@@ -37,7 +37,7 @@ fun ProfileScreen(postsVm: PostsViewModel, themeVm: ThemeViewModel) {
             
             // Name - Slightly bigger
             Text(
-                text = "Arl Encarguez",
+                text = "Christian Jay Nagac",
                 style = MaterialTheme.typography.headlineMedium,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.primary
@@ -45,7 +45,7 @@ fun ProfileScreen(postsVm: PostsViewModel, themeVm: ThemeViewModel) {
             
             // Username - with @
             Text(
-                text = "@aencarguez",
+                text = "@cjnagac",
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.secondary
             )
@@ -61,7 +61,7 @@ fun ProfileScreen(postsVm: PostsViewModel, themeVm: ThemeViewModel) {
             
             // Email
             Text(
-                text = "aencarguez89245@liceo.edu.ph",
+                text = "cjnagac03981@liceo.edu.ph",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.tertiary
             )
@@ -105,7 +105,7 @@ fun ProfileScreen(postsVm: PostsViewModel, themeVm: ThemeViewModel) {
 
         // Page Number - Bottom Right, slightly smaller
         Text(
-            text = "Arl Encarguez Page 11 of 16",
+            text = "Christian Jay Nagac Page 11 of 16",
             modifier = Modifier
                 .align(Alignment.BottomEnd)
                 .padding(16.dp),
